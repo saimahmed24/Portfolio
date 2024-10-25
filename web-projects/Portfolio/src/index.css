@@ -30,3 +30,6 @@
   background: radial-gradient(125% 125% at 50% 20%, rgba(0, 0, 0, 1) 50%, rgba(255, 0, 0, 1) 100%);
 }
 
+.red-period{
+  color: red;
+}

@@ -1,8 +1,5 @@
 import image1 from "/public/1.png";
-import image2 from "/public/2.png";
-import image3 from "/public/3.png";
-import image4 from "/public/4.png";
-import image5 from "/public/5.png";
+
 import { motion } from "framer-motion"
 
 
@@ -10,34 +7,12 @@ import { motion } from "framer-motion"
 const projectsData = [
   {
     image: image1,
-    title: "Habit Tracker",
-    description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui pariatur molestias magnam neque magni, quod quas ad, dignissimos nisi suscipit odio! Atque commodi facere voluptas vel provident laudantium reprehenderit a!",
-    technologies: ["HTML", "CSS", "JavaScript", "MySQL"]
+    title: "Text Utility App",
+    description: "The Text Utility App is a versatile tool designed to enhance your text management experience. Whether you're editing, formatting, or analyzing text, this app provides a comprehensive set of features to make your tasks easier and more efficient.",
+    technologies: ["HTML", "CSS", "JavaScript", "React"],
+    link: "https://text-util-nu.vercel.app/"
   },
-  {
-    image: image2,
-    title: "Todo App",
-    description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui pariatur molestias magnam neque magni, quod quas ad, dignissimos nisi suscipit odio! Atque commodi facere voluptas vel provident laudantium reprehenderit a!",
-    technologies: ["TypeScript", "Next.Js", "Tailwind", "PostgreSQL"]
-  },
-  {
-    image: image3,
-    title: "Social Media App",
-    description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui pariatur molestias magnam neque magni, quod quas ad, dignissimos nisi suscipit odio! Atque commodi facere voluptas vel provident laudantium reprehenderit a!",
-    technologies: ["TypeScript", "React", "Tailwind", "Supabase"]
-  },
-  {
-    image: image4,
-    title: "Restaurant Website",
-    description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui pariatur molestias magnam neque magni, quod quas ad, dignissimos nisi suscipit odio! Atque commodi facere voluptas vel provident laudantium reprehenderit a!",
-    technologies: ["HTML", "CSS", "JavaScript", "MySQL"]
-  },
-  {
-    image: image5,
-    title: "Admin Dashboard",
-    description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui pariatur molestias magnam neque magni, quod quas ad, dignissimos nisi suscipit odio! Atque commodi facere voluptas vel provident laudantium reprehenderit a!",
-    technologies: ["React", "Tailwind", "Docker", "MySQL"]
-  },
+
 ]
 
 const ScrollReveal = ({ children }) => {
@@ -57,7 +32,7 @@ const ProjectCard = ({ project }) => {
   return (
     <ScrollReveal>
       <div className="flex flex-col items-center gap-8 md:flex-row md:gap-24">
-        <img src={project.image} alt="" className="w-full cursor-pointer rounded-2xl transition-all duration-300 hover:scale-105 md:w-[300px]" />
+        <img src={project.image} alt="project-image" className="w-full cursor-pointer rounded transition-all duration-300 hover:scale-105 md:w-[300px]" onClick={() => window.open(project.link, "_blank")} />
         <div className="flex flex-col gap-5">
           <div className="flex flex-col gap-3">
             <div className="text-xl font-semibold text-red-500">{project.title}</div>
@@ -66,7 +41,7 @@ const ProjectCard = ({ project }) => {
           <div className="flex flex-wrap gap-5">
             {
               project.technologies.map((tech, index) => (
-                <span key={index} className="border text-white border-red-500 rounded-lg bg-black/50 p-3">
+                <span key={index} className="border text-white border-red-500 rounded-lg bg-black/50 px-2 py-1">
                   {tech}
                 </span>
               ))

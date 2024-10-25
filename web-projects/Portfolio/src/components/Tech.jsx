@@ -7,7 +7,7 @@ const Tech = () => {
     visible:{opacity:1, y:0}
   }
   return (
-    <div id="tech" className="flex min-h-[70vh] w-full flex-col items-center justify-center gap-16 md:gap-32">
+    <div id="tech" className="flex min-h-[80vh] w-full flex-col items-center justify-center gap-16 md:gap-32">
       <motion.h1 
       variants={variants}
       initial="hidden"

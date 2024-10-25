@@ -1,7 +1,8 @@
+import { color } from "framer-motion";
 import { div } from "framer-motion/client";
 import { useState } from "react"
 import { BiMenu, BiX } from "react-icons/bi";
-import { BsGithub, BsLinkedin, BsTwitter, BsTwitterX, BsYoutube } from "react-icons/bs"
+import { BsBehance, BsGithub, BsLinkedin, BsTwitter, BsTwitterX, BsYoutube } from "react-icons/bs"
 
 const Navbar = ({ isDarkMode, toggleTheme }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,7 +15,7 @@ const Navbar = ({ isDarkMode, toggleTheme }) => {
 
   return (
     <nav className="fixed z-10 top-0 flex items-center w-full justify-between border-b border-b-gray-700 bg-black/70 px-16 py-6 text-white backdrop-blur-md ">
-      <a href="#home" className=" text-3xl font-semibold transition-all duration-300 hover:opacity-100 ">Portfolio.</a>
+      <a href="#home" className=" text-3xl font-semibold transition-all duration-300 hover:opacity-100 ">Portfolio<span className="red-period">.</span></a>
       <ul className="hidden md:flex gap-10">
         <a href="#home" className=" cursor-pointer opacity-70 transition-all duration-300 hover:opacity-100 ">
           <li>
@@ -43,18 +44,21 @@ const Navbar = ({ isDarkMode, toggleTheme }) => {
         </a>
       </ul>
       <ul className="hidden md:flex items-center justify-center gap-5">
-        <li className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-red-500 hover:opacity-100">
-          <BsYoutube />
-        </li>
-        <li className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-blue-700 hover:opacity-100 ">
-          <BsLinkedin />
-        </li>
-        <li className="cursor-pointer text-xl opacity-70 transition-all duration-300  hover:text-sky-500 hover:opacity-100 ">
-          <BsTwitter />
-        </li>
-        <li className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-orange-500 hover:opacity-100 ">
-          <BsGithub />
-        </li>
+        <a href="https://www.linkedin.com/in/saimahmed24" target="_blank">
+          <li className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-sky-700 hover:opacity-100 ">
+            <BsLinkedin />
+          </li>
+        </a>
+        <a href="https://github.com/saimahmed24" target="_blank">
+          <li className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-orange-500 hover:opacity-100 ">
+            <BsGithub />
+          </li>
+        </a>
+        <a href="https://www.behance.net/saimahmedqazi24" target="_blank">
+          <li className="cursor-pointer text-xl opacity-70 transition-all duration-300  hover:text-blue-600 hover:opacity-100 ">
+            <BsBehance />
+          </li>
+        </a>
 
         {/* <label className="inline-flex items-center cursor-pointer">
           <input type="checkbox" value="" className="sr-only peer" checked={isDarkMode}
@@ -62,10 +66,10 @@ const Navbar = ({ isDarkMode, toggleTheme }) => {
           <div className="relative w-9 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
           <span className="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300 ">Enable Dark Theme</span>
         </label> */}
-        <li > 
+        <li >
           <label
             htmlFor="themeSwitcherThree"
-            className={"themeSwitcherThree inline-flex cursor-pointer select-none items-center m-0 transition-all"}
+            className={"themeSwitcherThree inline-flex cursor-pointer select-none items-center ml-4 transition-all"}
           >
             <input
               type="checkbox"
@@ -180,30 +184,33 @@ const Navbar = ({ isDarkMode, toggleTheme }) => {
             </a>
           </ul>
           <ul className="flex flex-wrap gap-5">
-            <li className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-red-500 hover:opacity-100">
-              <BsYoutube />
-            </li>
-            <li className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-blue-700 hover:opacity-100 ">
-              <BsLinkedin />
-            </li>
-            <li className="cursor-pointer text-xl opacity-70 transition-all duration-300  hover:text-sky-500 hover:opacity-100 ">
-              <BsTwitter />
-            </li>
-            <li className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-orange-500 hover:opacity-100 ">
-              <BsGithub />
-            </li>
+            <a href="https://www.linkedin.com/in/saimahmed24" target="_blank">
+              <li className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-sky-700 hover:opacity-100 ">
+                <BsLinkedin />
+              </li>
+            </a>
+            <a href="https://github.com/saimahmed24" target="_blank">
+              <li className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-orange-500 hover:opacity-100 ">
+                <BsGithub />
+              </li>
+            </a>
+            <a href="https://www.behance.net/saimahmedqazi24" target="_blank">
+              <li className="cursor-pointer text-xl opacity-70 transition-all duration-300  hover:text-blue-600 hover:opacity-100 ">
+                <BsBehance />
+              </li>
+            </a>
           </ul>
           <ul>
             <li><label className="flex flex-wrap  gap-2 items-center cursor-pointer">
-            <span className="text-xs font-normal text-white ">Dark Mode</span>
+              <span className="text-xs font-normal text-white ">Dark Mode</span>
               <input type="checkbox" value="" className="sr-only peer" checked={isDarkMode}
                 onChange={toggleTheme} />
               <div className="relative w-9 h-5 bg-black peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-red-500 dark:peer-focus:ring-red-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-red-500 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-red-500" ></div>
-              
+
             </label></li>
           </ul>
-          
-          
+
+
         </div>
       )
       }

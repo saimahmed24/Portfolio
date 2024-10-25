@@ -1,3 +1,6 @@
+import { BiSolidDownload } from "react-icons/bi"
+import CV from "/public/CV.pdf"
+
 const Contact = () => {
   return (
     <div id="contact" className="flex min-h-[70vh] min-w-full items-center justify-center">
@@ -8,7 +11,8 @@ const Contact = () => {
           </span>
         </h1>
         <p className="text-center text-lg font-semibold text-gray-500">Want to chat? Send me E-mail through this button and I'll respond whenever I can.</p>
-        <a href="mailto:saimahmedqazi22@gmail.com" className="text-nowrap rounded-lg border border-red-900 bg-black px-5 py-3 text-lg font-bold text-white shadow-lg shadow-red-900 transition-all duration-300 hover:translate-y-2 hover:shadow-xl hover:shadow-red-900">Contact Me</a>
+       <div className="flex flex-wrap justify-center items-center gap-8"> <a href="mailto:saimahmedqazi22@gmail.com" className="text-nowrap rounded-lg border border-red-900 bg-black px-5 py-3 text-lg font-bold text-white shadow-lg shadow-red-900 transition-all duration-300 hover:translate-y-2 hover:shadow-xl hover:shadow-red-900">Contact Me</a>
+       <a href={CV} download="cv.pdf" className="flex justify-center items-center gap-2 text-nowrap rounded-lg border border-red-900 bg-black px-5 py-3 text-lg font-bold text-white shadow-lg shadow-red-900 transition-all duration-300 hover:translate-y-2 hover:shadow-xl hover:shadow-red-900"><BiSolidDownload className="text-red-500"/>Resume</a></div>
         </div>
     </div>
   )
