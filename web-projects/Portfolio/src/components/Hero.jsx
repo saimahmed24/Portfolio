@@ -1,4 +1,4 @@
-import image from "/public/image.webp"
+import image from "/public/profile.webp"
 import { motion } from "framer-motion"
 import { useEffect } from "react";
 const Hero = () => {
