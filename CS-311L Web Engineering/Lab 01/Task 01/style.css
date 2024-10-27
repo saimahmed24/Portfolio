@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    font-family: "Poppins", serif;
+}
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+nav {
+    position: sticky;
+    top: 0;
+    margin: 20px 0;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6 );
+    background-clip: content-box;
+    
+    
+}
+nav a {
+   
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: bold;
+}
+/* img {
+    border: 2px solid black;
+    border-radius: 100%;
+} */
+
+
+.profilePicture {
+    border-radius: 50%;
+    
+}
+
+.biographyContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.biographyContent p {
+   width: 50%;
+
+}
+
+.projectsContent {
+    align-self: flex-start;
+    padding-left: 20px;
+}
+.skillsContent {
+    align-self: flex-start;
+    padding-left: 20px;
+}
+
+section {
+    scroll-margin: 50px;
+    padding: 20px;
+    background: #ffffff;
+    margin: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #35424a;
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+table, th, td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+}
+th {
+    background-color: #f2f2f2;
+}
