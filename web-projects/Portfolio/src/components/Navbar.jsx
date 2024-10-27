@@ -68,6 +68,7 @@ const Navbar = ({ isDarkMode, toggleTheme }) => {
         </label> */}
         <li >
           <label
+          
             htmlFor="themeSwitcherThree"
             className={"themeSwitcherThree inline-flex cursor-pointer select-none items-center ml-4 transition-all"}
           >
@@ -78,6 +79,7 @@ const Navbar = ({ isDarkMode, toggleTheme }) => {
               className="sr-only"
               checked={isDarkMode}
               onChange={toggleTheme}
+              
             />
 
             <div className="shadow-two flex items-center justify-center ">
