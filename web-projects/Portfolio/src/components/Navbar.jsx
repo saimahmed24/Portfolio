@@ -15,8 +15,8 @@ const Navbar = ({ isDarkMode, toggleTheme }) => {
 
   return (
     <nav className="fixed z-10 top-0 flex items-center w-full justify-between border-b border-b-gray-700 bg-black/70 px-16 py-6 text-white backdrop-blur-md ">
-      <a href="#home" className=" text-3xl font-semibold transition-all duration-300 hover:opacity-100 ">Portfolio<span className="red-period">.</span></a>
-      <ul className="hidden md:flex gap-10">
+      <a href="#home" className=" text-3xl font-semibold transition-all duration-300 hover:opacity-100 ">Portfolio<span className="text-red-600">.</span></a>
+      <ul className="hidden md:flex gap-10 w-min-880 ">
         <a href="#home" className=" cursor-pointer opacity-70 transition-all duration-300 hover:opacity-100 ">
           <li>
             Home
@@ -43,7 +43,7 @@ const Navbar = ({ isDarkMode, toggleTheme }) => {
           </li>
         </a>
       </ul>
-      <ul className="hidden md:flex items-center justify-center gap-5">
+      <ul className="hidden md:flex items-center justify-center gap-3">
         <a href="https://www.linkedin.com/in/saimahmed24" target="_blank">
           <li className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-sky-700 hover:opacity-100 ">
             <BsLinkedin />
