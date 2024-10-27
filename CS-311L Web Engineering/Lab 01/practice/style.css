@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.section1 {
+    background-color: cornsilk;
+    display: flex;
+    justify-content: center;
+   flex-wrap: wrap;
+    gap: 40px;
+}
+
+div {
+
+}
+
+
+
+.box {
+    background-color: coral;
+    color: white;
+    border: none;
+    width: 100px;
+    height: 100px;
+}
+
+.line{
+    background-color: wheat;
+}

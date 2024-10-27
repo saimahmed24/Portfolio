@@ -1,0 +1,972 @@
+:root {
+    --default-color: #FFF;
+    --primary-color: #6A8C6A;
+    --secondary-color: rgb(66, 66, 66);
+    --tertiary-color: rgb(44, 44, 44);
+
+    --accent-color-1: #F05454;
+    --accent-color-2: #C2A13A;
+    --accent-color-3: #7A8BCC;
+    --accent-color-4: #C56565;
+    --accent-color-5: #6A8C6A;
+}
+
+
+body.light-theme {
+    --default-color: #333;
+    --secondary-color: rgb(200, 200, 200);
+    --tertiary-color: rgb(240, 240, 240);
+    background-color: #b6b6b6;
+
+    color: var(--default-color);
+
+}
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100vw;
+    background-color: rgb(21, 21, 21);
+}
+
+.view {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ################################################################################################################ */
+
+/* ################ NAVBAR ################ */
+
+/* ################################################################################################################ */
+.navbar {
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background-color: rgb(12, 12, 12);
+    transition: background-color 0.5s ease;
+
+}
+
+.head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 10%;
+
+
+}
+
+
+.circle.accent1 {
+    background-color: var(--accent-color-1);
+}
+
+.circle.accent2 {
+    background-color: var(--accent-color-2);
+}
+
+.circle.accent3 {
+    background-color: var(--accent-color-3);
+}
+
+.circle.accent4 {
+    background-color: var(--accent-color-4);
+}
+
+.circle.accent5 {
+    background-color: var(--accent-color-5);
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 10px;
+    transition: border-color 0.3s ease;
+}
+
+
+.theme-switcher {
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.theme-button {
+    padding: 5px 10px;
+    border: 2px solid transparent;
+
+    background-color: #f0f0f0;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+
+.theme-button.active {
+    background-color: var(--primary-color);
+    color: #fff;
+    border-color: var(--primary-color);
+}
+
+
+.theme-button:hover {
+    background-color: rgba(255, 255, 255, 0.50);
+}
+.printBtn {
+    margin-left: 8px;
+    background-color: var(--primary-color);
+    color: var(--default-color);
+}
+
+
+/* ################################################################################################################ */
+
+/* ################ editor ################ */
+
+/* ################################################################################################################ */
+
+
+.editMain {
+    width: 595px;
+    margin: 0;
+    /* display: flex;  ALREADY SET WITH BUTTON */
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    color: var(--default-color);
+}
+
+.editContent {
+    margin-bottom: 20px;
+}
+
+.inputHeader {
+    display: block;
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 10px;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary-color);
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.inputSection {
+    margin-bottom: 16px;
+}
+
+.inputGroup {
+    display: flex;
+    align-items: center;
+}
+
+
+.inputTitle {
+    width: 150px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.input {
+    width: 92%;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#inputGender {
+    padding: 10px;
+    width: 100%;
+}
+
+textarea.input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+}
+
+.editContentSkills .input {
+    width: 30%;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.addPictureButton,
+.saveButton,
+.addButton,
+.removeButton {
+    padding: 10px 20px;
+    color: var(--default-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.addPictureButton {
+    background-color: #007bff;
+}
+
+.addPictureButton:hover {
+    background-color: #0056b3;
+}
+
+.saveButton {
+    background-color: #28a745;
+}
+
+.saveButton:hover {
+    background-color: #218838;
+}
+
+.addButton {
+    background-color: #6c757d;
+}
+
+.addButton:hover {
+    background-color: #5a6268;
+}
+
+.removeButton {
+    background-color: red;
+}
+
+.removeButton:hover {
+    background-color: rgb(255, 50, 50);
+}
+
+.editContentSummary .input {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.editContentEducation .input,
+.editContentExperience .input {
+    margin-bottom: 10px;
+}
+
+
+/* ################################################################################################################ */
+
+
+.resume {
+    width: 595px;
+    height: 842px;
+    margin: 20px auto;
+
+    box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.personalInformation {
+    color: var(--default-color);
+    width: 100%;
+    background-color: var(--primary-color);
+    height: 119px;
+    position: absolute;
+    top: 5%;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.pInfo {
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.profilePhoto {
+    background-image: url("/img/profilePicture.jpg");
+    width: 192px;
+    height: 192px;
+    border-radius: 100%;
+    border: 6px solid var(--secondary-color);
+    background-size: contain;
+
+}
+
+.name {
+    font-size: larger;
+    font-weight: bolder;
+}
+
+
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+    width: 595px;
+    height: 842px;
+}
+
+/* ################################################################################################################ */
+
+/* ################ Left Section ################ */
+
+/* ################################################################################################################ */
+
+.left {
+    background-color: var(--tertiary-color);
+    width: 40%;
+    height: 100%;
+    display: flex;
+
+
+
+    color: var(--primary-color);
+}
+
+.leftContent {
+    display: flex;
+    flex-direction: column;
+    margin: 84% 0px;
+    gap: 30px;
+
+
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    padding: 0;
+    word-break: break-all;
+    margin-left: 5%;
+    font-size: 16px;
+    font-weight: 600;
+
+
+}
+
+.information img {
+    filter: invert(1);
+}
+
+
+body.light-theme .information img {
+    filter: none;
+}
+
+.contactTitle {
+    font-size: 24px;
+    font-weight: 900;
+    color: var(--default-color);
+
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px;
+}
+
+.skills {
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    width: 95%;
+    margin: 0;
+    padding: 0;
+    word-break: break-all;
+    margin-left: 5%;
+
+}
+
+.toggleSkills {
+    transform: rotate(0deg);
+
+}
+
+.toggleSkills.expand {
+    transform: rotate(-180deg);
+}
+
+.skillHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.skillHeader img {
+    filter: invert(1);
+}
+
+
+.light-theme .skillHeader img {
+    filter: none;
+}
+
+.skillTitle {
+    font-weight: 900;
+    color: var(--default-color);
+
+
+}
+
+
+
+
+.skillContent {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.skill {
+    font-weight: 900;
+
+}
+
+.certificates {
+
+ 
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: 0;
+    padding: 0;
+    word-break: break-all;
+    margin-left: 5%;
+
+
+}
+
+.certificate {
+    font-weight: 900;
+
+}
+
+
+
+
+
+
+
+
+
+.certificateContent {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 20px;
+
+}
+
+.certificateHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 900;
+    color: var(--default-color);
+
+}
+
+.certificateHeader img {
+    filter: invert(1);
+}
+
+.certificateTitle {
+    font-weight: 900;
+    padding-bottom: 8px;
+
+}
+
+/* ################################################################################################################ */
+
+
+
+/* ################ Right Sectoin ################ */
+
+
+/* ################################################################################################################ */
+.right {
+    width: 60%;
+
+    background-color: var(--secondary-color);
+    color: var(--default-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 16px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+
+
+}
+
+
+
+.summary {
+    flex-direction: column;
+    margin-top: 54%;
+    margin-left: 8px;
+    width: 90%;
+    margin-bottom: 20px;
+
+}
+
+.summaryTitle {
+    color: var(--primary-color);
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+
+.educations {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    margin-left: 8px;
+    width: 90%;
+    margin-bottom: 20px;
+
+}
+
+.educations p {
+    font-size: small;
+    margin-bottom: 10px;
+}
+
+.educationTitle {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.education {
+    font-weight: bold;
+}
+
+.experiences {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    margin-left: 8px;
+
+    width: 90%;
+
+}
+
+.experienceTitle {
+    color: var(--primary-color);
+
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.experience {
+    font-weight: bold;
+
+}
+
+.experiences p {
+    font-weight: lighter;
+    font-size: small;
+    margin-bottom: 10px;
+}
+
+
+
+.editContent {
+    width: 100%;
+}
+
+.editing-pane {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 5%;
+    width: 30%;
+    height: 80%;
+    margin: 20px auto;
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.summaryTitle {
+    width: 100%;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+#save-button {
+    display: block;
+    margin-top: 20px;
+}
+
+
+
+
+
+/* ################ Media Queries ################ */
+
+
+
+/* Media query for medium screens */
+@media (min-width: 480px) and (max-width: 1024px) {
+    
+    .main {
+        width: 476px;
+        height: 673.6px;
+    }
+
+    .resume {
+        width: 476px;
+        height: 673.6px;
+    }
+
+    .profilePhoto {
+        background: none;
+        background-image: url("/img/profilePicture.jpg");
+        width: 96px; /* Adjusted for smaller screens */
+        height: 96px; /* Adjusted for smaller screens */
+        border-radius: 100%;
+        border: 6px solid var(--secondary-color);
+        background-size: contain;
+    }
+
+    .personalInformation {
+        max-height: 100px;
+    }
+
+    .content {
+        width: 100%;
+        height: 673.6px;
+    }
+
+    p {
+        font-size: x-small;
+    }
+
+    span {
+        font-size: medium;
+    }
+
+    .contactTitle {
+        padding-top: 20px;
+        font-size: medium; /* Moved here */
+    }
+
+    .summaryTitle,
+    .educationTitle,
+    .experienceTitle {
+        font-size: medium;
+        padding-top: 24px; /* Moved here */
+    }
+
+    .education {
+        font-size: small;
+    }
+
+    .educations p {
+        font-size: x-small;
+    }
+
+    .experience {
+        font-size: small;
+    }
+
+    .experiences p {
+        font-size: x-small;
+    }
+
+    .contact-item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 4px;
+    }
+
+    .contact-item span {
+        font-size: x-small;
+    }
+
+    .contact-item img {
+        width: 16px;
+    }
+
+    .skill {
+        font-size: x-small;
+    }
+
+    .certificate {
+        font-size: x-small;
+    }
+}
+
+
+@media (max-width: 480px)  {
+    .editMain {
+        width: 80%;
+    }
+    .inputs {
+        margin-top: 40px;
+    }
+    .main {
+        width: 333.2px;
+        height: 471.52px;
+       
+    }
+
+    .resume {
+        width: 100%; /* Same as .main for consistency */
+        height: 100%;
+     
+    }
+    .content {
+        width: 100%;
+        height: 100%;
+      
+    }
+    .right {
+        height: 100%;
+    }
+    .left {
+        height: 471.52px;
+        
+        align-self: center;
+    }
+    .leftContent {
+        height: 471.52px;
+        padding-top: 120px;
+       
+        margin: 0;
+        
+    }
+
+    .profilePhoto {
+        background: none;
+        background-image: url("/img/profilePicture.jpg");
+        width: 80px; /* Adjusted for smaller screens */
+        height: 80px; /* Adjusted for smaller screens */
+        border-radius: 100%;
+        border: 4px solid var(--secondary-color); /* Reduced border size */
+        background-size: contain;
+        
+    }
+
+    .personalInformation {
+        max-height: 80px; /* Adjusted for mobile */
+        
+    }
+    .pInfo div {
+      font-size: xx-small;  
+    }
+
+   
+    p {
+        font-size: 8px; /* Smaller for better fit */
+    }
+
+    span {
+        font-size: 8px; /* Smaller for better fit */
+
+        
+    }
+
+    .contactTitle {
+       
+        font-size: xx-small; /* Smaller size for mobile */
+       
+    }
+
+    .summaryTitle,
+    .educationTitle,
+    .experienceTitle {
+        font-size: 10px; /* Smaller for mobile visibility */
+        margin: 0;
+    }
+    .summaryTitle{
+         padding-top: 20px;
+    }
+
+    .education {
+        font-size: 8px; /* Smaller for better fit */
+        
+    }
+    .educations {
+       margin-bottom: 0;
+       font-size: 8px; /* Smaller for better fit */
+        
+    }
+
+    .educations p {
+        font-size: 8px; /* Smaller for better fit */
+
+    }
+
+    .experience {
+        font-size: xx-small; /* Adjusted for clarity */
+        
+    }
+
+    .experiences p {
+        font-size: 8px; /* Smaller for better fit */
+
+        
+    }
+
+
+
+    .contact-item span {
+        font-size: 8px; /* Smaller for better fit */
+
+
+    }
+
+    .contact-item img {
+        width: 14px; /* Smaller icon */
+    }
+
+    .skill {
+        font-size: xx-small; /* Smaller for readability */
+    }
+    .skillContent {
+        gap: 0;
+        margin-top: 0;
+    }
+
+    .certificate {
+        font-size: xx-small; /* Adjusted for consistency */
+    }
+    .certificateContent {
+        gap: 0;
+        margin-top: 0;
+    }
+
+}
+
+/* ################################################################################################################ */
+
+
+
+/* Print-specific styles */
+@media print {
+    /* Hide all other content except what's inside .content */
+    body * {
+        visibility: hidden;
+    }
+
+    .content, .content * {
+        visibility: visible;
+    }
+    .leftContent {
+      
+        gap: 100px;
+    
+    }
+
+    /* Ensure .content fills the page without extra margins */
+    .content {
+        width: 100%;
+        height: 100vh; /* Fill the entire viewport height for printing */
+        margin: 0;
+        padding: 0;
+        overflow: visible;
+        page-break-inside: avoid;
+        font-size: large;
+        transform-origin: top left;
+    }
+
+    /* Adjust specific elements to scale appropriately */
+    .profilePhoto {
+        width: 192px;
+        height: 192px;
+    }
+
+    .personalInformation {
+        max-height: 164px;
+    }
+
+    /* Remove shadows and borders for print */
+    .resume {
+        box-shadow: none;
+        border: none;
+    }
+
+    /* Font size adjustments */
+    p {
+        font-size: medium;
+    }
+
+    span, .contactTitle, .summaryTitle, .educationTitle, .experienceTitle {
+        font-size: x-large;
+    }
+
+    .education, .experience {
+        font-size: large;
+    }
+
+    .educations p, .experiences p, .contact-item span, .skill, .certificate {
+        font-size: medium;
+    }
+}

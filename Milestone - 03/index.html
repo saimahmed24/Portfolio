@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Resume</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="navbar" id="navbar">
+
+        <div class="head">
+            <div class="theme-switcher">
+                <button class="theme-button" id="light-theme">Light</button>
+                <button class="theme-button active" id="dark-theme">Dark</button>
+            </div>
+            <div class="circle accent1"></div>
+            <div class="circle accent2"></div>
+            <div class="circle accent3"></div>
+            <div class="circle accent4"></div>
+            <div class="circle accent5"></div>
+            <button class="theme-button"  id="editBtn">Edit</button>
+            <button class="theme-button printBtn"  id="printBtn">Print</button>
+
+        </div>
+    </div>
+    <div class="view">
+        <div class="editMain" style="display: none;">
+            <!-- Basic Info -->
+            <div class="editContent" id="basicInfo">
+                <span class="inputHeader">Basic Info:</span>
+                <div class="inputs">
+                    <div class="inputSection">
+                        <div class="inputGroup">
+                            <span class="inputTitle">Name:</span>
+                            <input type="text" class="input" id="inputName" maxlength="20">
+                        </div>
+                    </div>
+                    <div class="inputSection">
+                        <div class="inputGroup">
+                            <span class="inputTitle">Profession:</span>
+                            <input type="text" class="input" id="inputProfession" maxlength="20">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Contact Info -->
+            <div class="editContent" id="contactInfo" style="display: none;">
+                <span class="inputHeader">Contact Info:</span>
+                <div class="inputs">
+                    <div class="inputSection">
+                    <div class="inputGroup">
+                        <span class="inputTitle">Gender:</span>
+                        <select class="input" id="inputGender">
+                            <option value="">Select your gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                    </div>
+                </div>
+                    <div class="inputSection">
+                        <div class="inputGroup">
+                            <span class="inputTitle">Date of Birth:</span>
+                            <input type="date" class="input" id="inputDOB">
+                        </div>
+                    </div>
+                    <div class="inputSection">
+                        <div class="inputGroup">
+                            <span class="inputTitle">Contact:</span>
+                            <input type="tel" class="input" id="inputPhone" pattern="[1-9]{1}[0-9]{9}">
+                        </div>
+                    </div>
+                    <div class="inputSection">
+                        <div class="inputGroup">
+                            <span class="inputTitle">Email:</span>
+                            <input type="text" class="input" id="inputEmail" maxlength="30">
+                        </div>
+                    </div>
+                    <div class="inputSection">
+                        <div class="inputGroup">
+                            <span class="inputTitle">Website:</span>
+                            <input type="text" class="input" id="inputWebsite" maxlength="50">
+                        </div>
+                    </div>
+                    <div class="inputSection">
+                        <div class="inputGroup">
+                            <span class="inputTitle">Location:</span>
+                            <input type="text" class="input" id="inputLocation" maxlength="50">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Skills -->
+            <div class="editContent" id="skills" style="display: none;">
+                <span class="inputHeader">Skills:</span>
+                <div class="inputs inputSkill">
+                    <div class="inputSection">
+                        <div class="inputGroup">
+                            <span class="inputTitle">Skill 1 Name:</span>
+                            <input id="inputSkill-1" type="text" class="input">
+                        </div>
+                    </div>
+                    <div class="inputSection">
+                        <div class="inputGroup">
+                        </div>
+                    </div>
+                </div>
+                <div class="inputs inputSkill">
+                    <div class="inputSection">
+                        <div class="inputGroup">
+                            <span class="inputTitle">Skill 2 Name:</span>
+                            <input id="inputSkill-2" type="text" class="input">
+                        </div>
+                    </div>
+                    <div class="inputSection">
+                        <div class="inputGroup">
+                        </div>
+                    </div>
+                </div>
+                <div class="inputs inputSkill">
+                    <div class="inputSection">
+                        <div class="inputGroup">
+                            <span class="inputTitle">Skill 3 Name:</span>
+                            <input id="inputSkill-3" type="text" class="input">
+                        </div>
+                    </div>
+                    <div class="inputSection">
+                        <div class="inputGroup">
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        
+            <!-- Certificate -->
+            <div class="editContent" id="certificate" style="display: none;">
+                <span class="inputHeader">Certificate:</span>
+                <div class="inputs inputCertificate">
+                    <div class="inputSection">
+                        <div class="inputGroup">
+                            <span class="inputTitle">Certificate 1 Name:</span>
+                            <input id="inputCertificate-1" type="text" class="input">
+                        </div>
+                    </div>
+                </div>
+                <div class="inputs inputCertificate">
+                    <div class="inputSection">
+                        <div class="inputGroup">
+                            <span class="inputTitle">Certificate 2 Name:</span>
+                            <input id="inputCertificate-2" type="text" class="input">
+                        </div>
+                    </div>
+                </div>
+                <div class="inputs inputCertificate">
+                    <div class="inputSection">
+                        <div class="inputGroup">
+                            <span class="inputTitle">Certificate 3 Name:</span>
+                            <input id="inputCertificate-3" type="text" class="input">
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        
+            <!-- Summary -->
+            <div class="editContent" id="summary" style="display: none;">
+                <span class="inputHeader">Summary:</span>
+                <div class="inputs">
+                    <div class="inputSection">
+                        <textarea id="inputSummary" maxlength="300" class="input" rows="4" placeholder="Write a brief summary here (up to 300 character)"></textarea>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Education -->
+            <div class="editContent" id="education" style="display: none;">
+                <span class="inputHeader">Education:</span>
+                <div class="inputs inputEducation">
+                    <div class="inputSection">
+                        <div class="inputGroup">
+                            <span class="inputTitle">Education 1 Title:</span>
+                            <input id="inputEducationTitle1" type="text" class="input">
+                        </div>
+                    </div>
+                    <div class="inputSection">
+                        <div class="inputGroup">
+                            <span class="inputTitle">Details:</span>
+                            <input id="inputEducation1" type="text" class="input">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="inputs inputEducation">
+                    <div class="inputSection">
+                        <div class="inputGroup">
+                            <span class="inputTitle">Education 2 Title:</span>
+                            <input id="inputEducationTitle2" type="text" class="input">
+                        </div>
+                    </div>
+                    <div class="inputSection">
+                        <div class="inputGroup">
+                            <span class="inputTitle">Details:</span>
+                            <input id="inputEducation2" type="text" class="input">
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        
+            <!-- Experience -->
+            <div class="editContent" id="experience" style="display: none;">
+                <span class="inputHeader">Experience:</span>
+                <div class="inputs inputExperience">
+                    <div class="inputSection">
+                        <div class="inputGroup">
+                            <span class="inputTitle">Experience 1 Title:</span>
+                            <input id="inputExperienceTitle1" type="text" class="input">
+                        </div>
+                    </div>
+                    <div class="inputSection">
+                        <div class="inputGroup">
+                            <span class="inputTitle">Details:</span>
+                            <input  id="inputExperience1"  type="text" class="input">
+                        </div>
+                    </div>
+                </div>
+                <div class="inputs inputExperience">
+                    <div class="inputSection">
+                        <div class="inputGroup">
+                            <span class="inputTitle">Experience 2 Title:</span>
+                            <input id="inputExperienceTitle2" type="text" class="input">
+                        </div>
+                    </div>
+                    <div class="inputSection">
+                        <div class="inputGroup">
+                            <span class="inputTitle">Details:</span>
+                            <input id="inputExperience2"  type="text" class="input">
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        
+            <!-- Add Picture -->
+            <div class="editContent" id="picture" style="display: none;">
+                <div class="inputs">
+                    <button class="addPictureButton" id="uploadBtn">Add Picture</button>
+                    <input type="file" id="fileInput" style="display: none;" accept="image/*">
+                </div>
+              
+            </div>
+            
+           
+        
+            <!-- Save -->
+            <div class="editContent" id="save" style="display: none;">
+                <div class="inputs">
+                    <button id="saveButton" class="saveButton">Save</button>
+                </div>
+            </div>
+        
+            <!-- Navigation Buttons -->
+            <div class="navigationButtons">
+                <button class="prevButton theme-button" onclick="prevSection()" style="display:none;">Previous</button>
+                <button class="nextButton theme-button active" onclick="nextSection()">Next</button>
+            </div>
+        </div>
+        
+
+
+        <div class="main" id="main">
+
+            <div class="resume" id="resume">
+                
+                <div class="content" id="content">
+                    <div class="personalInformation">
+                        <div class="pInfo">
+                            <div class="name" id="name">Saim Ahmed</div>
+                            <div class="profession" id="profession">Web Designer</div>
+                        </div>
+                        <div class="profilePhoto" id="profilePhoto"></div>
+                    </div>
+                    <div class="left">
+                        <div class="leftContent">
+                            <div class="information">
+                                <span class="contactTitle"></span>
+                                <div id="contact-gender" class="contact-item">
+                                    <img src="img/avatar.png" alt="" width="20px">
+                                    <span class="gender" id="gender">Male</span>
+                                </div>
+                                <div id="contact-dob" class="contact-item">
+                                    <img src="img/dob.png" alt="" width="20px" class="icon">
+                                    <span class="dob" id="dob">28-11-2002</span>
+                                </div>
+                                <div id="contact-phone" class="contact-item">
+                                    <img src="img/phone.png" alt="" width="20px" class="icon">
+                                    <span class="phone" id="phone">+92 123 4567890</span>
+                                </div>
+                                <div id="contact-email" class="contact-item">
+                                    <img src="img/email.png" alt="" width="20px" class="icon">
+                                    <span class="email" id="email">abcd@gmail.com</span>
+                                </div>
+                                <div id="contact-website" class="contact-item">
+                                    <img src="img/website.png" alt="" width="20px" class="icon">
+                                    <span class="website" id="website">https://www.linkedin.com/in/saimahmed24</span>
+                                </div>
+                                <div id="contact-location" class="contact-item">
+                                    <img src="img/location.png" alt="" width="20px" class="icon">
+                                    <span class="location" id="location">Karachi, Pakistan</span>
+                                </div>
+                            </div>
+                            <div class="skills">
+                                <div class="skillHeader">
+                                    <span class="skillTitle">Skill</span>
+                                    <div class="btnExpandCollapse toggleSkills" id="btnExpandCollapse"></div>
+                                </div>
+                                <div class="skillContent">
+                                    <span id="skill-1" class="skill">Graphic Designer</span>
+                                   
+                                    <span id="skill-2" class="skill">Graphic Designer</span>
+                                    
+                                    <span id="skill-3" class="skill">Graphic Designer</span>
+                                  
+                                </div>
+                            </div>
+
+
+
+                            <div class="certificates">
+                                <div class="certificateHeader">
+                                    <span class="certificateTitle">Certificate</span>
+                                    <div class="btnExpandCollapse toggleCertificates" id="btnExpandCollapse"></div>
+                                </div>
+                                <div class="certificateContent">
+                                    <span id="certificate-1" class="certificate">Adobe</span>
+                                    <span id="certificate-2" class="certificate">Adobe</span>
+                                    <span id="certificate-3" class="certificate">Adobe</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="right">
+                        <div class="contentRight">
+                            <div class="summary">
+                                <div id="summaryTitle" class="summaryTitle">Summary</div>
+                                <p id="summaryParagraph">I’ve always been a computer geek and a video games enthusiast, which fuels my passion for technology. I believe graphic design and web design are fundamental skills everyone should know, and I use my expertise in these areas to create engaging and effective solutions. Proficient in technologies like HTML, CSS, JavaScript, and Python, along with a strong foundation in Adobe tools</p>
+                            </div>
+                            <div class="educations">
+                                <div class="educationTitle">Education</div>
+                                <span class="education eduT"  id="educationTitle1">Sir Syed University Of Engineering & Technology.</span>
+                                <p class="educationDetails" id="education1">Bachelor's Degree in
+                                    Computer Science  (2022 &minus; 2026)</p>
+                                <span class="education eduT" id="educationTitle2">DGWD - CERTIFICATE IN GRAPHIC DESIGN (2023)</span>
+                                <p class="educationDetails" id="education2">Arena Multimedia Pakistan</p>
+                               
+                            </div>
+                            <div class="experiences">
+                                <span class="experienceTitle" id="experienceHeader">Experience</span>
+                                <span class="experience" id="experienceTitle1">Kuro Solutions.</span>
+                                <p class="experienceDetails" id="experience1">Lead Designer</p>
+                                <span class="experience" id="experienceTitle2">Tech n Thought (2023)</span>
+                                <p class="experienceDetails" id="experience2">Graphic Designer</p>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="form.js"></script>
+    <script src="print.js"></script>
+
+</body>
+
+</html>
