@@ -42,7 +42,7 @@ const Experience = () => {
             </div>
             <div className="w-full max-w-xl lg:w-3/4">
               <h6 className="mb-2 font-semibold text-gray-500 text-xl">{experience.role} - {" "}
-                <span className="text-lg text-red-500">{experience.company}</span>
+                <span className="text-lg text-red-600">{experience.company}</span>
               </h6>
               <p className="mb-4 text-gray-500">{experience.description}</p>
               <div className="flex flex-wrap gap-5">
