@@ -1,4 +1,6 @@
 import image1 from "/public/1.png";
+import image2 from "/public/2.png";
+import image3 from "/public/3.png";
 
 import { motion } from "framer-motion"
 
@@ -6,12 +8,27 @@ import { motion } from "framer-motion"
 
 const projectsData = [
   {
+    image: image3,
+    title: "Portfolio",
+    description: "Created this personal web portfolio to showcase a variety of projects, skills, and experiences in web development.",
+    technologies: ["React","Tailwind CSS", "Framer Motion"],
+    link: "https://portfolio-saim-ahmeds-projects-8102f5a1.vercel.app/"
+  },
+  {
+    image: image2,
+    title: "Resume Builder",
+    description: "Resume Builder webpage that allows users to create, customize, and download professional resumes.",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    link: "https://resume-builder-seven-virid.vercel.app/"
+  },
+  {
     image: image1,
     title: "Text Utility App",
     description: "The Text Utility App is a versatile tool designed to enhance your text management experience. Whether you're editing, formatting, or analyzing text, this app provides a comprehensive set of features to make your tasks easier and more efficient.",
-    technologies: ["HTML", "CSS", "JavaScript", "React"],
+    technologies: ["React","Bootstrap"],
     link: "https://text-util-nu.vercel.app/"
   },
+ 
 
 ]
 

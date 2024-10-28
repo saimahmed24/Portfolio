@@ -8,6 +8,13 @@ const EXPERIENCES = [
     description: "As the Lead Designer at Kuro Solutions, I am responsible for driving the creative vision and ensuring the delivery of high-quality design solutions across various projects. My role involves leading a talented design team and collaborating closely with clients and stakeholders to bring their ideas to life.",
     technologies: ["Adobe Suite", "Figma"]
   },
+  {
+    year: "2023-2024",
+    role: "Junior Designer",
+    company: "TechNThought",
+    description: "As a Junior Designer at TechNThought, I collaborated with a dynamic design team to develop engaging visual solutions for a variety of projects. My responsibilities included assisting in concept development, creating design assets, and supporting the execution of client briefs. Through close teamwork and mentorship, I gained valuable experience in design principles and user experience, contributing to innovative projects while continuously enhancing my skills.",
+    technologies: ["Adobe Suite"]
+  },
   
 ]
 const ScrollReveal = ({ children }) => {
