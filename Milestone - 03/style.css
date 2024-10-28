@@ -180,10 +180,13 @@ body {
     background-color: var(--secondary-color);
     padding: 10px;
     border-radius: 4px;
+    margin-bottom: 40px;
+
 }
 
 .inputSection {
     margin-bottom: 16px;
+    
 }
 
 .inputGroup {
