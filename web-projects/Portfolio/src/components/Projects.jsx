@@ -11,8 +11,8 @@ const projectsData = [
     image: image3,
     title: "Portfolio",
     description: "Created this personal web portfolio to showcase a variety of projects, skills, and experiences in web development.",
-    technologies: ["React","Tailwind CSS", "Framer Motion"],
-    link: "https://portfolio-saim-ahmeds-projects-8102f5a1.vercel.app/"
+    technologies: ["React","Tailwind CSS","Framer Motion"],
+    link: "#home"
   },
   {
     image: image2,
