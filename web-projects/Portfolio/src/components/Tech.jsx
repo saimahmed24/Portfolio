@@ -114,78 +114,78 @@ const Tech = () => {
         transition={{ duration: 0.5 }}
         className="text-2xl font-light text-gray-500 md:text-4xl">Design Technologies</motion.h2>
       <div className="flex flex-wrap items-center justify-center gap-10 p-5">
-  <motion.div
-    variants={variants}
-    initial="hidden"
-    whileInView="visible"
-    transition={{ duration: 0.5 }}
-  >
-    <SiAdobeillustrator className="cursor-pointer w-[96px] text-[#FF9A00] transition-all duration-300 hover:-translate-y-5 sm:text-[100px] md:text-[120px]" /> {/* Orange */}
-  </motion.div>
+        <motion.div
+          variants={variants}
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 0.5 }}
+        >
+          <SiAdobeillustrator className="cursor-pointer text-[60px]  text-[#FF9A00] transition-all duration-300 hover:-translate-y-5  sm:text-[100px] md:text-[120px]  " /> {/* Orange */}
+        </motion.div>
 
-  <motion.div
-    variants={variants}
-    initial="hidden"
-    whileInView="visible"
-    transition={{ duration: 0.5 }}
-  >
-    <SiAdobephotoshop className="cursor-pointer w-[96px] text-[#31A8FF] transition-all duration-300 hover:-translate-y-5 sm:text-[100px] md:text-[120px]" /> {/* Blue */}
-  </motion.div>
+        <motion.div
+          variants={variants}
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 0.5 }}
+        >
+          <SiAdobephotoshop className="cursor-pointer text-[60px]  text-[#31A8FF] transition-all duration-300 hover:-translate-y-5 sm:text-[100px] md:text-[120px] " /> {/* Blue */}
+        </motion.div>
 
-  <motion.div
-    variants={variants}
-    initial="hidden"
-    whileInView="visible"
-    transition={{ duration: 0.5 }}
-  >
-    <SiAdobeindesign className="cursor-pointer w-[96px] text-[#E5007D] transition-all duration-300 hover:-translate-y-5 sm:text-[100px] md:text-[120px]" /> {/* Pink */}
-  </motion.div>
+        <motion.div
+          variants={variants}
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 0.5 }}
+        >
+          <SiAdobeindesign className="cursor-pointer text-[60px]  text-[#E5007D] transition-all duration-300 hover:-translate-y-5 sm:text-[100px] md:text-[120px]" /> {/* Pink */}
+        </motion.div>
 
-  <motion.div
-    variants={variants}
-    initial="hidden"
-    whileInView="visible"
-    transition={{ duration: 0.5 }}
-  >
-    <SiAdobelightroom className="cursor-pointer w-[96px] text-[#F6A600] transition-all duration-300 hover:-translate-y-5 sm:text-[100px] md:text-[120px]" /> {/* Yellow */}
-  </motion.div>
+        <motion.div
+          variants={variants}
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 0.5 }}
+        >
+          <SiAdobelightroom className="cursor-pointer text-[60px]  text-[#F6A600] transition-all duration-300 hover:-translate-y-5 sm:text-[100px] md:text-[120px]" /> {/* Yellow */}
+        </motion.div>
 
-  <motion.div
-    variants={variants}
-    initial="hidden"
-    whileInView="visible"
-    transition={{ duration: 0.5 }}
-  >
-    <SiAdobexd className="cursor-pointer w-[96px] text-[#FF3B00] transition-all duration-300 hover:-translate-y-5 sm:text-[100px] md:text-[120px]" /> {/* Red */}
-  </motion.div>
+        <motion.div
+          variants={variants}
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 0.5 }}
+        >
+          <SiAdobexd className="cursor-pointer text-[60px]  text-[#FF3B00] transition-all duration-300 hover:-translate-y-5 sm:text-[100px] md:text-[120px]" /> {/* Red */}
+        </motion.div>
 
-  <motion.div
-    variants={variants}
-    initial="hidden"
-    whileInView="visible"
-    transition={{ duration: 0.5 }}
-  >
-    <SiCoreldraw className="cursor-pointer w-[96px] text-[#00B140] transition-all duration-300 hover:-translate-y-5 sm:text-[100px] md:text-[120px]" /> {/* Green */}
-  </motion.div>
+        <motion.div
+          variants={variants}
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 0.5 }}
+        >
+          <SiCoreldraw className="cursor-pointer text-[60px]  text-[#00B140] transition-all duration-300 hover:-translate-y-5 sm:text-[100px] md:text-[120px]" /> {/* Green */}
+        </motion.div>
 
-  <motion.div
-    variants={variants}
-    initial="hidden"
-    whileInView="visible"
-    transition={{ duration: 0.5 }}
-  >
-    <SiFigma className="cursor-pointer w-[96px] text-[#F24E1E] transition-all duration-300 hover:-translate-y-5 sm:text-[100px] md:text-[120px]" /> {/* Orange-Red */}
-  </motion.div>
+        <motion.div
+          variants={variants}
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 0.5 }}
+        >
+          <SiFigma className="cursor-pointer text-[60px]  text-[#F24E1E] transition-all duration-300 hover:-translate-y-5 sm:text-[100px] md:text-[120px]" /> {/* Orange-Red */}
+        </motion.div>
 
-  <motion.div
-    variants={variants}
-    initial="hidden"
-    whileInView="visible"
-    transition={{ duration: 0.5 }}
-  >
-    <SiCanva className="cursor-pointer w-[96px] text-[#00C4CC] transition-all duration-300 hover:-translate-y-5 sm:text-[100px] md:text-[120px]" /> {/* Teal */}
-  </motion.div>
-</div>
+        <motion.div
+          variants={variants}
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 0.5 }}
+        >
+          <SiCanva className="cursor-pointer text-[60px]  text-[#00C4CC] transition-all duration-300 hover:-translate-y-5 sm:text-[100px] md:text-[120px]" /> {/* Teal */}
+        </motion.div>
+      </div>
 
     </div>
   )
