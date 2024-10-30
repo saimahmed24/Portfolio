@@ -7,9 +7,9 @@ const Hero = () => {
             <div className="absolute inset-0 flex items-center lg:justify-start lg:text-left text-white justify-center text-center ">
                 <div className="lg:w-[50%] w-[90%] flex flex-col">
                     <h1 className="font-bold text-center lg:text-left font-serif lg:text-4xl md:text-2xl mx-8 ">
-                        Be Wise and Verify in Advance. Let's Examine the History of Your Car.
+                        Be Wise and Verify in Advance. Let&apos;s Examine the History of Your Car.
                     </h1>
-                    <p className="mx-8 py-4 lg:text-2xl md:text-lg text-xs "> Let's Verify Your Car History is a global service that aims to enhance transparency in the used car market and promote road safety on a global scale by providing comprehensive vehicle histories.</p>
+                    <p className="mx-8 py-4 lg:text-2xl md:text-lg text-xs "> Let&apos;s Verify Your Car History is a global service that aims to enhance transparency in the used car market and promote road safety on a global scale by providing comprehensive vehicle histories.</p>
                     <p className="mx-8 font-bold ">Get A VIN Check With Check Your Vehicle</p>
                     <div className="flex gap-1">
                         <input className="ml-8 w-72" type="text" />
